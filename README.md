@@ -6,3 +6,12 @@ A simple demo blog with Blazor.
 - Tailwind CSS
 - Support markdown for posts
 - SQLite for storage
+
+## Getting Started
+
+Go to `BlogBlaze/BlogBlaze` and install JS dependencies with `pnpm install`.
+
+You can run the project with `pnpm dev` in the same folder. This will -
+
+- Run the dotnet project BlogBlaze in watch mode - `dotnet watch run`
+- Run tailwindcss in watch mode - `npx tailwindcss -i ./wwwroot/css/styles.css -o ./wwwroot/css/styles.css --watch`
