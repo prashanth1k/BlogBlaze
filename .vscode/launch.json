@@ -1,0 +1,34 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dev BlogBlaze",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "watch",
+      // If you have a different target framework, replace it here
+      "targetFramework": "net8.0",
+      // Assuming that the project is in the root of your workspace
+      "program": "${workspaceFolder}/BlogBlaze/bin/Debug/net8.0/BlogBlaze.dll",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    },
+    {
+      "name": "Run pnpx dev",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/BlogBlaze/node_modules/.bin/pnpx",
+      "args": ["dev"],
+      "console": "integratedTerminal"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run BlogBlaze and pnpx dev",
+      "configurations": ["Dev BlogBlaze", "Run pnpx dev"]
+    }
+  ]
+}

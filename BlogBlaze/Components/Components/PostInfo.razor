@@ -1,0 +1,18 @@
+@namespace BlogBlaze.Components.Components
+
+<div class="flex gap-4">
+  <div class="flex items-center gap-2">
+    <span class="text-gray-400 text-sm font-semibold">@PublishedDate | </span>
+    <span class="text-gray-400 text-sm font-semibold">@Author |</span>
+    <span class="text-gray-400 text-sm font-semibold">@Category</span>
+  </div>
+</div>
+
+@code {
+  [Parameter]
+  public DateTime PublishedDate { get; set; }
+  [Parameter]
+  public String? Author { get; set; }
+  [Parameter]
+  public String? Category { get; set; }
+}

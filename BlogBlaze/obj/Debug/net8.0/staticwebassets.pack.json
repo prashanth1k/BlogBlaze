@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\dev\\1p\\dotnet\\BlogBlaze\\BlogBlaze\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\dev\\1p\\dotnet\\BlogBlaze\\BlogBlaze\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlogBlaze.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlogBlaze.props",
+      "PackagePath": "build\\BlogBlaze.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlogBlaze.props",
+      "PackagePath": "buildMultiTargeting\\BlogBlaze.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlogBlaze.props",
+      "PackagePath": "buildTransitive\\BlogBlaze.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\dev\\1p\\dotnet\\BlogBlaze\\BlogBlaze.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\dev\\1p\\dotnet\\BlogBlaze\\BlogBlaze.Client\\obj\\Debug\\net8.0\\compressed\\907081klun.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\dev\\1p\\dotnet\\BlogBlaze\\BlogBlaze.Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "C:\\dev\\1p\\dotnet\\BlogBlaze\\BlogBlaze.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlogBlaze.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlogBlaze.Client.props",
+      "PackagePath": "build\\BlogBlaze.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlogBlaze.Client.props",
+      "PackagePath": "buildMultiTargeting\\BlogBlaze.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlogBlaze.Client.props",
+      "PackagePath": "buildTransitive\\BlogBlaze.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

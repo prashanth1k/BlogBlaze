@@ -1,0 +1,28 @@
+@using BlogBlaze.Models
+@using BlogBlaze.Data
+@inject AppDbContext dbContext
+
+@page "/posts"
+
+<div class="text-2xl font-bold mt-6 mb-4">Posts</div>
+
+@foreach (var post in posts)
+{
+  <div class="my-2">
+    <NavLink href=@($"post/{post.UrlSlug}")>
+      <div class="text-xl text-blue-900">@post.Title</div>
+    </NavLink>
+
+  </div>
+
+}
+
+@code {
+  private List<Post> posts = new List<Post>();
+
+  protected override void OnInitialized()
+  {
+    posts = dbContext.Posts.Take(15).ToList();
+
+  }
+}

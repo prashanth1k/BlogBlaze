@@ -1,0 +1,35 @@
+@using BlogBlaze.Models
+@using BlogBlaze.Components.Components
+@using BlogBlaze.Data
+@using Markdig
+
+@page "/post/{Url}"
+@inject AppDbContext dbContext
+
+
+<div>
+  <div class="text-2xl font-bold mt-6 mb-4">@post.Title</div>
+
+  <div class="mb-4">
+    <PostInfo Author="@post.Author" Category="@post.Category" PublishedDate="@post.PublishedDate" />
+  </div>
+
+  <article>
+    @((MarkupString)Markdown.ToHtml(post.Content))
+  </article>
+
+</div>
+
+
+@code {
+
+  [Parameter]
+  public string? Url { get; set; }
+
+  private Post post = new Post();
+  protected override void OnInitialized()
+  {
+    post = dbContext.Posts.FirstOrDefault(p => p.UrlSlug == Url);
+  }
+
+}

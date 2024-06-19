@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": ["build", "${workspaceFolder}/BlogBlaze/BlogBlaze.csproj"],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build:css",
+      "command": "pnpx",
+      "type": "shell",
+      "args": ["postcss", "Styles/app.css", "-o", "wwwroot/css/app.css"],
+      "problemMatcher": [],
+      "dependsOn": ["build"]
+    },
+    {
+      "label": "watch",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "watch",
+        "run",
+        "--project",
+        "${workspaceFolder}/BlogBlaze/BlogBlaze.csproj"
+      ],
+      "problemMatcher": {
+        "base": "$msCompile",
+        "background": {
+          "beginsPattern": "^watch : Started",
+          "endsPattern": "^watch : Exited"
+        }
+      },
+      "isBackground": true,
+      "presentation": {
+        "reveal": "silent"
+      }
+    }
+  ]
+}

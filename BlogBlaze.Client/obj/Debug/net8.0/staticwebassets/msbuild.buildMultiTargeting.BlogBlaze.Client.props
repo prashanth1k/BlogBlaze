@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BlogBlaze.Client.props" />
+</Project>
