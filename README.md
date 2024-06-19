@@ -7,6 +7,13 @@ A simple demo blog with Blazor.
 - Support markdown for posts
 - SQLite for storage
 
+**Todo**:
+
+- Lacks a way to enter posts. Need to add a form to create posts.
+- General styling
+- SEO features
+- Static generation / caching
+
 ## Getting Started
 
 Go to `BlogBlaze/BlogBlaze` and install JS dependencies with `pnpm install`.
